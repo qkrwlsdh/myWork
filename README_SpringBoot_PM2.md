@@ -18,6 +18,7 @@ plugins {
 }
 ```
 
+***
 -1. _NPM 설치_
 ```null
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -27,13 +28,16 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 nvm install --lts
 ```
 
+***
 -2. _PM2 설치_
 ```null
 npm install -g pm2
 ```
 
+***
 -3. _Gradle build_
 
+***
 -4. _PM2로 실행시키기 위한 파일이름.json 생성_
 ```javascript
 // server.json
@@ -86,6 +90,7 @@ npm install -g pm2
 - `wait_ready`: Reload 대기 이벤트 대신에 어플리케이션에서의 **process.send('ready')** 를 기다립니다.
 - `autorestart`: 프로세스를 1회만 실행시키고 싶을 때, **false**로 설정합니다.
 
+***
 -5. _PM2 실행_
 #### Commands
 
